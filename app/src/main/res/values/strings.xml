@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">松达的茶</string>
+    <string name="username_hint">"请输入用户名"</string>
+    <string name="password_hint">"请输入8位以上的密码"</string>
+    <string name="login">"登录"</string>
+    <string name="sign">"注册"</string>
+    <string name="title_activity_basic_acitivity">BasicAcitivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_basic">BasicActivity</string>
+    <string name="order">点单</string>
+    <string name="bill">订单</string>
+    <string name="location">华南理工大学广州国际校区店</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

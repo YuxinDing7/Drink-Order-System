@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:layout_gravity="top">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="12dp">
+
+            <ImageView
+                android:id="@+id/choose_drink_img"
+                android:layout_width="wrap_content"
+                android:layout_height="220dp"
+                android:src="@drawable/avocado" />
+
+            <TextView
+                android:id="@+id/choose_drinkName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="14dp"
+                android:text="TextView"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/choose_drinkIntro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="6dp"
+                android:text="TextView" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:text="规格（小杯减￥2，大杯加￥2）" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioGroup_size"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton_s"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/choose"
+                    android:button="@null"
+                    android:text="小杯"
+                    android:textAlignment="center"
+                    android:padding="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_m"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/choose"
+                    android:button="@null"
+                    android:checked="true"
+                    android:text="中杯"
+                    android:textAlignment="center"
+                    android:padding="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_l"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/choose"
+                    android:button="@null"
+                    android:text="大杯"
+                    android:textAlignment="center"
+                    android:padding="5dp"/>
+            </RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:text="温度" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioGroup_ice"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton_ice"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/choose"
+                    android:button="@null"
+                    android:checked="true"
+                    android:text="全冰"
+                    android:textAlignment="center"
+                    android:padding="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_lessIce"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/choose"
+                    android:button="@null"
+                    android:text="少冰"
+                    android:textAlignment="center"
+                    android:padding="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_noIce"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/choose"
+                    android:button="@null"
+                    android:text="去冰"
+                    android:textAlignment="center"
+                    android:padding="5dp"/>
+                    <RadioButton
+                        android:id="@+id/radioButton_normal"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/choose"
+                        android:button="@null"
+                        android:text="常温"
+                        android:textAlignment="center"
+                        android:padding="5dp"/>
+            </RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:text="甜度" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioGroup_sugar"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton_sugar"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/choose"
+                    android:button="@null"
+                    android:checked="true"
+                    android:text="全糖"
+                    android:textAlignment="center"
+                    android:padding="5dp"/>
+                <RadioButton
+                    android:id="@+id/radioButton_lessS"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/choose"
+                    android:button="@null"
+                    android:text="少糖"
+                    android:textAlignment="center"
+                    android:padding="5dp"/>
+                <RadioButton
+                    android:id="@+id/radioButton_halfS"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/choose"
+                    android:button="@null"
+                    android:text="半糖"
+                    android:textAlignment="center"
+                    android:padding="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton_noS"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/choose"
+                    android:button="@null"
+                    android:text="微糖"
+                    android:textAlignment="center"
+                    android:padding="5dp"/>
+            </RadioGroup>
+    </LinearLayout>
+    </ScrollView>
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider"
+        android:layout_gravity="bottom"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:layout_margin="10dp">
+
+        <ImageButton
+            android:id="@+id/button_subtract"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/subtract"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="left|center_vertical"/>
+
+        <TextView
+            android:id="@+id/textView_drinkNumber"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingHorizontal="16dp"
+            android:layout_gravity="center"/>
+
+        <ImageButton
+            android:id="@+id/button_add"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/round_add_circle"
+            android:layout_gravity="center" />
+
+        <Button
+            android:id="@+id/button_buy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:layout_marginLeft="20dp"
+            android:text="加入购物车"
+            android:layout_gravity="right|center_vertical"/>
+
+        <Button
+            android:id="@+id/button_exit"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="退出" />
+    </LinearLayout>
+</LinearLayout>
